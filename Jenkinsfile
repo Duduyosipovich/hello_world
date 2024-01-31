@@ -1,7 +1,8 @@
 pipeline {
     agent {
         docker {
-            image '... your java and maven image ...'
+            image 'maven'
+            args '-u root'
         }
     }
     stages {
